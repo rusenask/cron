@@ -285,6 +285,7 @@ func (c *Cron) entrySnapshot() []*Entry {
 	for _, e := range c.entries {
 		entries = append(entries, &Entry{
 			Schedule: e.Schedule,
+			Name:     e.Name,
 			Next:     e.Next,
 			Prev:     e.Prev,
 			Job:      e.Job,
